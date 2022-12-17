@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <style>
+#firstcont {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    /* align-items: center; */
+    margin: auto; 
+    position: fixed;
+    background-color: white;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+#stdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding-left: 20px;
+}
+#stimg img {
+    width: 150px;
+    height: 70px;
+}
+#nddiv img {
+    width: 30px;
+    height: 30px;
+}
+#nddiv {
+    display: flex;
+    gap:15px;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+#firstcont a {
+    text-decoration: none;
+    color: black;
+}
+#firstcont a:hover {
+    text-decoration: underline;
+    color: green;
+}
+#nddiv img:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+#btn1{
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+
+}
+#btn2,#secbtn {
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: yellow;
+}
+/* secong portion starts */
+#secondcont {
+    /* border: 2px solid green; */
+    width: 33%;
+    height: 300px;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+}
+#secondcont h1 {
+    font-size: 60px;
+}
+#secondcont p {
+    font-size: 20px;
+}
+/*img part starts here */
+#rdcont {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#rdcont img {
+    width: 100%;
+}
+#st {
+    background-color: rgb(222, 174, 18);
+}
+#nd {
+    background-color: rgb(208, 174, 64);
+}
+#rd {
+    background-color: rgb(239, 233, 154);
+}
+#rt {
+    background-color: rgb(230, 227, 218);
+}
+#stb{
+    background-color: rgb(222, 174, 18);
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+}
+#ndb {
+    background-color: rgb(208, 174, 64);
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+}
+#rdb {
+    background-color: rgb(239, 233, 154);
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+}
+#rtb {
+    background-color: rgb(230, 227, 218);
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+}
+#rdcont h3 {
+ margin: 30px 30px;
+}
+#rdcont button {
+    margin: 0px 30px 30px 30px;
+}
+@media screen and (min-width:551px) and (max-width:1000px) {
+    #rdcont {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+}
+@media screen and (max-width:500px) {
+    #rdcont {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+}
+#bigimg {
+   background-color: rgba(59, 11, 11, 0.999);
+   
+}
+#pic {
+    width: 60%;
+    /* height: 30%; */
+    
+    margin: auto;
+    padding-top: 50px;
+}
+#pic img {
+    width: 100%;
+}
+#pic h2 {
+    padding: 30px;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div id="firstcont">  <!-- Navbar Start -->
+
+        <div id="stdiv"> <!-- First Div start -->
+             <a href="#">Products</a>
+             <a href="#">Resources</a>
+              <a href="#">Inspiration</a>
+              <a href="#">Pricing</a>
+        </div>             <!-- First Div End -->
+   
+   
+   <div id="stimg">
+        <img class="logo" src="https://vectorlogoseek.com/wp-content/uploads/2019/07/mailchimp-vector-logo.png" alt="">
+    </div>
+        <div id="nddiv">            <!-- Third Div start-->
+           <a href="#">Sales:
+            +1 (800) 315-5939</a> 
+          <img  src="data:image/png;base64,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" alt="">
+          <img src="https://cdn-icons-png.flaticon.com/512/3917/3917754.png" alt="">
+               <button id="btn1">Log in</button>
+               <button id="btn2">Sign up</button>
+                   
+        </div>                              <!-- Third Div End -->
+          
+</div>         
+
+<!-- second container Starts............................................... -->
+<div id="secondcont">
+
+    <h1>Turn Emails into Revenue</h1>
+    <p>Win new customers with the #1 email marketing and automations brand*
+    that recommends ways to get more opens, clicks, and sales</p>
+    <button id="secbtn">Sign up</button>
+   </div>
+
+   <!-- div img part -->
+<div id="rdcont">
+<div id="st">
+<img src="https://eep.io/images/yzco4xsimv0y/33f3mgIWbzKjIpIRJi2f5v/6bd36bba38b7f6a94d587605ab9a7d75/Desktop_Feature_Cards_1_Automations.jpeg?w=630&fm=webp&q=80" alt="error">
+<h3>Send the right message at the right time to convert more customers</h3>
+<button id="stb">Learn more</button>
+</div>
+<div id="nd">
+    <img src="https://eep.io/images/yzco4xsimv0y/hBcOt3RZ5DOhMJD2Hi2Z2/96b28d17c45e9376731ad825b002b0ff/Desktop_Feature_Cards_2_Analytics.png?w=630&fm=webp&q=80" alt="error">
+    <h3>Send the right message at the right time to convert more customers</h3>
+    <button id="ndb">Learn more</button>
+    </div>
+    <div id="rd">
+        <img src="https://eep.io/images/yzco4xsimv0y/5xqzo6y8Z7anw9VQXJarpj/5f91182af7bf16ecc34b487a619d0a54/Desktop_Feature_Cards_3_Segmentation.jpeg?w=630&fm=webp&q=80" alt="error">
+        <h3>Send the right message at the right time to convert more customers</h3>
+        <button id="rdb">Learn more</button>
+        </div>
+        <div id="rt">
+            <img src="https://eep.io/images/yzco4xsimv0y/lsHRpmOI81ZcFS1Yld0Bs/1e2812587cd0f3089061bd4b513fd6d0/Desktop_Feature_Cards_4_Integrations.png?w=630&fm=webp&q=80" alt="error">
+            <h3>Send the right message at the right time to convert more customers</h3>
+            <button id="rtb">Learn more</button>
+            </div>
+
+</div>
+<!-- image part here -->
+<div id="bigimg">
+<div id="pic">
+    <img src="https://st4.depositphotos.com/7330092/22106/i/1600/depositphotos_221069766-stock-photo-two-girls-business-meeting-cafe.jpg" alt="error">
+
+<h2>Most email marketing platforms tell you how your campaigns perform. We analyze the data from the billions of emails we send to give you personalized recoomendations for improving your content,targeting, and automations.</h2>
+</div>
+</div>
+</body>
+</html>
